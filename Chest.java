@@ -34,7 +34,7 @@ public class Chest extends JPanel {
 
   public int positionChest(){
     Random rand = new Random();
-    int coordinateChest = rand.nextInt(800 - 1) + 0;
+    int coordinateChest = rand.nextInt(800 - 1);
 
     return coordinateChest;
   }
@@ -45,7 +45,7 @@ public class Chest extends JPanel {
     try {
       Image coffre = ImageIO.read(new File("Coffre.png"));
 
-      g.drawImage(coffre, 0, coordinateChest, getWidth(), getHeight(), this);
+      g.drawImage(coffre, 0, coordinateChest, getWidth(), getHeight(), this);     //Initialisation pour l'affichage du coffre
 
     } catch (IOException e){
       e.printStackTrace();
