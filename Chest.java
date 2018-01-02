@@ -43,7 +43,7 @@ public class Chest extends JPanel {
   public void paintComponent(Graphics g, int coordinateChest) {
     super.paintComponent(g);
     try {
-      Image coffre = ImageIO.read(new File("plongeur.png"));
+      Image coffre = ImageIO.read(new File("Coffre.png"));
 
       g.drawImage(coffre, 0, coordinateChest, getWidth(), getHeight(), this);
 
