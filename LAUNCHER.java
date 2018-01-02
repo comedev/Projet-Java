@@ -21,8 +21,8 @@ public class LAUNCHER extends JFrame{
     this.setSize(700, 800);
     this.setLocationRelativeTo(null);           //Nous demandons maintenant à notre objet de se positionner au centre
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    this.setContentPane(new FondJeu());
-    this.setContentPane(new Chest());
+    this.setContentPane(new FondJeu());     //Affiche le fond du jeu
+    this.setContentPane(new Chest());       //Affiche le coffre
 
     this.setVisible(true);
   }
